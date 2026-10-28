@@ -1,0 +1,45 @@
+name: Publish signed update
+
+on:
+  push:
+    branches: [main]
+    paths: [publish-plan.json]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: public-release-maintenance
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      PYTHONUTF8: "1"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python -m pip install "cryptography>=43"
+      - run: python -B -m unittest discover -s tests -v
+      - id: prepare
+        run: python .github/scripts/publish.py
+      - name: Publish verified binary packages
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: v${{ steps.prepare.outputs.version }}
+        run: |
+          if gh release view "$TAG" --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
+            gh release upload "$TAG" out/* --repo "$GITHUB_REPOSITORY" --clobber
+          else
+            gh release create "$TAG" out/* --repo "$GITHUB_REPOSITORY" --title "SASIRIRSIN $TAG" --notes "Windows ve Linux için imzalı SASIRIRSIN dağıtımı." --latest
+          fi
+      - name: Keep only the successfully published current release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: v${{ steps.prepare.outputs.version }}
+        run: python .github/scripts/keep_latest.py --apply --tag "$TAG"

@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-labelledby="title desc">
+  <title id="title">SASIRIRSIN — Hesapların tek bir panelde.</title>
+  <desc id="desc">Windows ve Linux için çoklu hesap yönetimi. Fare desteği, toplu işlemler ve canlı takip.</desc>
+  <defs>
+    <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#111b30"/><stop offset="1" stop-color="#10101f"/></linearGradient>
+    <linearGradient id="ink"><stop stop-color="#5eead4"/><stop offset="1" stop-color="#a78bfa"/></linearGradient>
+    <radialGradient id="glow"><stop stop-color="#9b72ed" stop-opacity=".19"/><stop offset="1" stop-color="#9b72ed" stop-opacity="0"/></radialGradient>
+    <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="1" fill="#364258" opacity=".5"/></pattern>
+    <clipPath id="round"><rect width="1200" height="360" rx="24"/></clipPath>
+  </defs>
+  <g clip-path="url(#round)">
+    <rect width="1200" height="360" fill="url(#bg)"/>
+    <rect x="670" width="530" height="360" fill="url(#dots)"/>
+    <ellipse cx="1030" cy="180" rx="420" ry="300" fill="url(#glow)"/>
+    <path d="M0 359h1200" stroke="url(#ink)" stroke-width="3"/>
+    <g transform="translate(48 36)">
+      <rect width="40" height="40" rx="12" fill="#1d2d42" stroke="#34465f"/>
+      <path d="M28 10H17l-7 7 4 4h10l-5 5h-8v5h11l9-9-4-4H17l3-3h8z" fill="url(#ink)"/>
+      <text x="55" y="27" fill="#c9c7e8" font-family="Arial,sans-serif" font-size="20" font-weight="700" letter-spacing="3">SASIRIRSIN</text>
+    </g>
+    <g font-family="Arial,sans-serif">
+      <text x="48" y="151" fill="#f2f4fc" font-size="48" font-weight="700">Hesapların.</text>
+      <text x="48" y="210" fill="url(#ink)" font-size="48" font-weight="700">Tek bir panelde.</text>
+      <text x="50" y="252" fill="#a9b6cc" font-size="18">Seç, başlat ve kaldığın yerden devam et.</text>
+      <g font-size="12" font-weight="700" letter-spacing="1">
+        <rect x="48" y="290" width="112" height="30" rx="15" fill="#152f35" stroke="#28515a"/>
+        <text x="69" y="310" fill="#76e7d6">WINDOWS</text>
+        <rect x="171" y="290" width="90" height="30" rx="15" fill="#29233f" stroke="#483a69"/>
+        <text x="194" y="310" fill="#c1a9fb">LINUX</text>
+      </g>
+      <g transform="translate(715 70)">
+        <rect width="428" height="222" rx="16" fill="#111827" stroke="#34415b"/>
+        <path d="M0 44h428" stroke="#2a3650"/>
+        <circle cx="22" cy="23" r="4" fill="#fb7185"/>
+        <circle cx="37" cy="23" r="4" fill="#fbbf24"/>
+        <circle cx="52" cy="23" r="4" fill="#5eead4"/>
+        <text x="403" y="27" text-anchor="end" fill="#8d9bb3" font-size="12">made by sasirirsin</text>
+        <g transform="translate(22 68)">
+          <rect width="43" height="43" rx="12" fill="#17353c"/>
+          <path d="m12 23 7 7 14-16" fill="none" stroke="#5eead4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+          <text x="60" y="17" fill="#e2e8f0" font-size="17" font-weight="700">Hesaplarını seç</text>
+          <text x="60" y="37" fill="#91a0b8" font-size="13">Tek tek ya da birlikte yönet.</text>
+        </g>
+        <g transform="translate(22 134)">
+          <rect width="43" height="43" rx="12" fill="#2b2342"/>
+          <path d="m17 12 15 10-15 10z" fill="#b59bf6"/>
+          <text x="60" y="17" fill="#e2e8f0" font-size="17" font-weight="700">Başlat ve takip et</text>
+          <text x="60" y="37" fill="#91a0b8" font-size="13">Oturumların, oyunların ve canlı akışın.</text>
+        </g>
+        <circle cx="379" cy="199" r="3" fill="#5eead4"/>
+        <text x="365" y="203" text-anchor="end" fill="#75859f" font-size="11">KONTROL SENDE</text>
+      </g>
+    </g>
+  </g>
+</svg>

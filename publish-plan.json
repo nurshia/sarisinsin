@@ -1,0 +1,13 @@
+{
+  "version": "1.1.4",
+  "packages": [
+    {
+      "platform": "linux-x64",
+      "download_url": "https://github.com/nurshia/sarisinsin/releases/download/v1.1.4/sasirirsin-linux-x64-standalone.zip"
+    },
+    {
+      "platform": "windows-x64",
+      "download_url": "https://github.com/nurshia/sarisinsin/releases/download/v1.1.4/sasirirsin-windows-x64-standalone.zip"
+    }
+  ]
+}

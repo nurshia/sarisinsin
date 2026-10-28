@@ -1,0 +1,32 @@
+name: Keep latest release
+
+on:
+  release:
+    types: [published, released]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: public-release-maintenance
+  cancel-in-progress: false
+
+jobs:
+  cleanup:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      GH_TOKEN: ${{ github.token }}
+      PYTHONUTF8: "1"
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python -m pip install "cryptography>=43"
+      - run: python -B -m unittest discover -s tests -v
+      - name: Verify latest packages and remove obsolete releases
+        run: python .github/scripts/keep_latest.py --apply

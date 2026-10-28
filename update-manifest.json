@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "version": "1.1.4",
+  "urgent": true,
+  "notes": "Acil güncelleme testi: yeni sürüm hazır olduğunda uygulama otomatik yeniden başlatılır. Kullanım rehberi yenilendi.",
+  "published_at": "2026-10-28T12:31:25.595908+00:00",
+  "expires_at": "2027-01-26T12:31:25.595908+00:00",
+  "packages": {
+    "linux-x64": {
+      "url": "https://github.com/nurshia/sarisinsin/releases/download/v1.1.4/sasirirsin-linux-x64-standalone.zip",
+      "size": 79928079,
+      "sha256": "28699554bf453a51867f34e54833980fcdfabdfa7a1d7ad15ff409d3dbc8b581",
+      "installation_sha256": "4993085c77b126ba8b73db75b2dcc3b6cbf403a9aa17a0a3a43132efd5e7919c"
+    },
+    "windows-x64": {
+      "url": "https://github.com/nurshia/sarisinsin/releases/download/v1.1.4/sasirirsin-windows-x64-standalone.zip",
+      "size": 39668747,
+      "sha256": "dc49fd8d7b4c3d16506d205849674bc266b5c3bc765ff74abceea33b4b27121a",
+      "installation_sha256": "21729a648b7b0eae8b0f3d06ae86269039a4cb6ec74851f85677811b78aba706"
+    }
+  },
+  "signature": "jGX5EDRxZUkRSjvSFfKNa5tLpEmCXnTsgdZGHy5sUFR0H1hShvb9UqDcg4OyHUT+p9GSfxvjYNImNO2lLVvQDQ=="
+}
