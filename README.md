@@ -49,7 +49,7 @@ Uygulamanın yanında gelen dosyaları aynı klasörde tut. Sonraki açılışla
 
 İlk açılışta **en az 8 karakterlik bir parola** belirle ve tekrar gir. **Kasamı oluştur** düğmesine tıkla. Sonraki açılışlarda bu parolayla kayıtlı hesaplarına ulaşırsın.
 
-Ekrandaki [YouTube](https://www.youtube.com/@wraithsdev) ve [Discord](https://discord.gg/vp) adımlarını tamamlayıp panele geç.
+Ekrandaki [YouTube](https://www.youtube.com/@xltun2) ve [Discord](https://discord.gg/vp) adımlarını tamamlayıp panele geç.
 
 <details>
 <summary><strong>İlk açılış ekranını göster</strong></summary>
@@ -202,6 +202,6 @@ Hesabın VP sunucusunda bulunduğunu kontrol et. Hesap satırındaki durumu ve *
 
 **made by sasirirsin**
 
-[YouTube](https://www.youtube.com/@wraithsdev) &nbsp; · &nbsp; [Discord](https://discord.gg/vp) &nbsp; · &nbsp; [Son sürümü indir](https://github.com/nurshia/sarisinsin/releases/latest)
+[YouTube](https://www.youtube.com/@xltun2) &nbsp; · &nbsp; [Discord](https://discord.gg/vp) &nbsp; · &nbsp; [Son sürümü indir](https://github.com/nurshia/sarisinsin/releases/latest)
 
 </div>
